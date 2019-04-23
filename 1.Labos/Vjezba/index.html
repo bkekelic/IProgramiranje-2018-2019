@@ -9,199 +9,175 @@
 
 </head>
 <body>
-    <style> 
-        .container{
-            width: 640px;          
-        }  
-           
-        
-        
-        #navigationLinks{
-            float: right;
-            margin: 0px;
-        }
-        #navigationLinks li{
-            float: left;
-            display: block;
-            padding: 8px;
-        }
-        .headerContainer{
-            background-image: url('images/backgroundImage.png');
-            width: 640px;
-            height: 400px;
-        }
-        .headerContainer h1{
-            text-align: center;
-            vertical-align: middle;
-            line-height: 400px;          
-        }
-       
-        h1, h3{
-            text-align: center;
-        }
-        #mainPicture1, #mainPicture2, #mainPicture3{
-            float: left;
-            padding: 30px;
-        }
-        #sectionPicture1, #sectionPicture2, #sectionPicture3{
-            float: left;
-            padding: 30px;
-        }
 
-        
-        
-        
-    </style>
-<div class=container>
-
-    <div class=navigationContainer>     
+    <header>
+    <nav class=navigationContainer>     
         <img src="images/navigationLogo.png" 
             alt="Navigation logo"
             width="100"
             height="30">
-        <ul id=navigationLinks>
-            <li>Navigation</li>
-            <li>Header</li>
-            <li>Main</li>
-            <li>Section</li>           
-            <li>Short section</li>
-            <li>Footer</li>
+        <ul class=navigationLinks>
+            <li><a href="">Navigation</a></li>
+            <li><a href="">Header</a></li>
+            <li><a href="">Main</a></li>
+            <li><a href="">Section</a></li>           
+            <li><a href="">Short section</a></li>
+            <li><a href="">Footer</a></li>
         </ul>
-    </div>
+    </nav>
+    </header>   
 
-    <div class=headerContainer>
-        <h1>Bernard Kekelić</h1>
-    </div>
 
-    <div class=mainContainer>
-        <h1>Galery</h1>
-        <h3>Abstract art</h3>
-        <hr>
+    <main>
 
-        <div class=mainPictures>
-            <div id=mainPicture1>
-                <img src="images/abstractImage.png" 
-                alt="Navigation logo"
-                width="150"
-                height="120">                  
-            </div>    
-            <div id=mainPicture2>
-                <img src="images/abstractImage.png" 
-                alt="Navigation logo"
-                width="150"
-                height="120">                       
-            </div> 
-            <div id=mainPicture3>
-                <img src="images/abstractImage.png" 
-                alt="Navigation logo"
-                width="150"
-                height="120">                      
-            </div>      
-        </div>
+        <section class="mainPictureHeader">
+                <h1>Bernard Kekelić</h1>
+                <h2>Ferit</h2>
+                <h4>DRC</h4>
+        </section>
 
-        
-    </div>
+        <section class="mainSection">
+                <h1>Gallery</h1>
+                <h3>Abstract art</h3>
+                <hr>
+                <div class="mainSectionPictures">
+                        <img src="images/abstractImage.png" 
+                        alt="Navigation logo"
+                        width="150"
+                        height="120"> 
 
-    <div class=sectionContainer>
-            <h1>Fan galery</h1>
-            <h3>Travel</h3>
-            <hr>
-            <div class=sectionPictures>
-                <div id=sectionPicture1>
+                        <img src="images/abstractImage.png" 
+                        alt="Navigation logo"
+                        width="150"
+                        height="120">
+
+                        <img src="images/abstractImage.png" 
+                        alt="Navigation logo"
+                        width="150"
+                        height="120"> 
+                </div>
+        </section>
+
+        <section class= "gallerySection">
+                <h1>Fan gallery</h1>
+                <h3>Travel</h3>
+                <hr>
+
+                <div class= "galleryPictures">
+                        <img src="images/seaImage.png" 
+                        alt="Sea image"
+                        width="150"
+                        height="120"> 
+                        <p>Hello! My name is Mark and this is my picture from Krk. It was nice to get rest in a boat.</p>                 
+
+                        <img src="images/seaImage.png" 
+                        alt="Sea image"
+                        width="150"
+                        height="120">
+                        <p>So amazing! A lot of beautiful memories.</p>                 
+                           
+                        <img src="images/seaImage.png" 
+                        alt="Sea image"
+                        width="150"
+                        height="120"> 
+                        <p>It was boring until Mark didn't jump into ocean.</p>                 
+                         
+                </div>
+        </section>
+    
+        <section class="highlistGalleryItem">
+                <h1>Highlist</h1>
+                <h3>Most viewed pictures</h3>
+                <hr>
+                    
+                <div id=highlistSectionPicture>
                     <img src="images/seaImage.png" 
                     alt="Sea image"
                     width="150"
                     height="120"> 
-                    <span>Hello! My name is Mark and this is my picture from Krk. It was nice to get rest in a boat.</span>                 
-                </div>    
-                <div id=sectionPicture2>
-                    <img src="images/seaImage.png" 
-                    alt="Sea image"
-                    width="150"
-                    height="120">
-                    <span>So amazing! A lot of beautiful memories.</span>                 
-                       
-                </div> 
-                <div id=sectionPicture3>
-                    <img src="images/seaImage.png" 
-                    alt="Sea image"
-                    width="150"
-                    height="120"> 
-                    <span>It was boring until Mark didn't jump into ocean.</span>                 
-                     
-                </div>      
-            </div>
-    </div>
+                    <p>It was boring until Mark didn't jump into ocean.</p>                                 
+                </div>   
+        </section>
 
-    <div class=highlistSectionContainer>
-        <h1>Highlist</h1>
-        <h3>Most viewed pictures</h3>
-        <hr>
-        <div id=highlistSectionPicture>
-                <img src="images/seaImage.png" 
-                alt="Sea image"
-                width="150"
-                height="120"> 
-                <span>It was boring until Mark didn't jump into ocean.</span>                                 
-            </div>   
-    </div>
+        <section class="shortSection">
+                <h1>This is some random button</h1>
+                <input type="button" value="Click on this random button">
+        </section>
 
-    <div class=shortSection>
-        <h1>This is some random button</h1>
-        <input type="button" value="Click on this random button">
-    </div>
-
-    <div class=googleMapSection>
-        <div class=searchGoogleMapSection>
-            <h1>Search google maps</h1>
-            <span>Input place name:</span><br>
-            <input type="text"><br>
-            <span>Provide additional information:</span><br>
-            <input type="text"><br>
-            <input id=searchGoogleMapsButton type="button" value="Submit">
-        </div>
-        <div class=showGoogleMapSection>
+        <section class="googleMapSection">
+                <div class=searchGoogleMapSection>
+                    <h1>Search google maps</h1>
+                    <span>Input place name:</span><br>
+                    <input type="text"><br>
+                    <span>Provide additional information:</span><br>
+                    <input type="text"><br>
+                    <input id=searchGoogleMapsButton type="button" value="Submit">
+                </div>
                 <img src="images/googleMapsImage.jpg" 
                 alt="Google maps image"
                 width="400"
-                height="300"> 
+                height="300">
+        </section>
+
+        <section class="aboveFooterSection">
+                <span>Hello! That's all from me.</span>
+                <span>Have a nice weekend!</span>
+        </section>
+
+    </main>
+
+    <footer class= "footer">
+        <div class="footerText">
+                <h1>Bernard Kekelić</h1>
+                <div class="footerTextLists">
+                    <div class="footerTextListLeft">
+                            <li><a href="">Navigation</a></li>
+                            <li><a href="">Header</a></li>
+                            <li><a href="">Main</a></li>
+                    </div>
+                    <div class="footerTextListRight">
+                            <li><a href="">Section</a></li>           
+                            <li><a href="">Short section</a></li>
+                            <li><a href="">Footer</a></li>
+                    </div>
+                </div>
         </div>
-    </div>
 
-    <div class=aboveFooterSection>
-        <span>Hello! That's all from me.</span>
-        <span>Have a nice weekend!</span>
-    </div>
+        <div class="footerSocialPages">
+            <a class="socialIcons" href="https://www.facebook.com/">
+                <img src="images/fb.png" 
+                alt="Fb icon"
+                width="50"
+                height="50"> 
+            </a>
 
-    <div class=footer>
-        <h1>Bernard Kekelić</h1>
-        <ul>
-            <li>Navigation</li>
-            <li>Header</li>
-            <li>Main</li>
-            <li>Highlist</li>
-            <li>Google Maps</li>
-        </ul>
-        <img src="images/fb.png" 
-            alt="Fb icon"
-            width="50"
-            height="50"> 
-        <img src="images/instagram.jpg" 
-            alt="Insta icon"
-            width="50"
-            height="50">    
-        <img src="images/viber.png" 
-            alt="Vib icon"
-            width="50"
-            height="50">    
-        <img src="images/snapchat.png" 
-            alt="snap icon"
-            width="50"
-            height="50"> 
+            <a class="socialIcons" href="https://www.instagram.com/">
+                <img src="images/instagram.jpg" 
+                alt="Insta icon"
+                width="50"
+                height="50"> 
+            </a>
 
-        <span>Bernard Kekelić © 2019</span>
-    </div>
+            <a class="socialIcons" href="https://www.viber.com/">
+                <img src="images/viber.png" 
+                alt="Viber icon"
+                width="50"
+                height="50"> 
+            </a>
+
+            <a class="socialIcons" href="https://www.snapchat.com/">
+                <img src="images/snapchat.png" 
+                alt="Snap icon"
+                width="50"
+                height="50"> 
+            </a>
+        </div>
+
+        <div class="footerCopyrights">
+                <span class="copyrightSpan">Bernard Kekelić © 2019</span>
+        </div>
+    </footer>
+  
         
-</div>
 </body>
 </html>
