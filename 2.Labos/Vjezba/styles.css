@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 
-.body {
-    margin : 0;
+body {
+    margin : 0px;
 }
 
 html{
@@ -16,11 +16,13 @@ html{
 
 .navigationContainer{
     display: flex;
+    background-color: gray;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 90px;
 }
 
 .navigationPicture{
+    margin-top: 10px;
     width: 100px;
     height: 30px;
 }
@@ -68,14 +70,14 @@ html{
     border-bottom: 1px solid black;
 }
 
-.mainSectionPictures{
+.galleryPictures{
     display: flex;
 }
 
 .mainSectionPicture1,
 .mainSectionPicture2,
 .mainSectionPicture3{
-    width: 33.33%;
+    width: 33%;
     padding: 10px;
     margin-bottom: 50px;
 }
@@ -92,14 +94,192 @@ html{
     height: 250px;
 } 
 
+.gallery_p{
+    text-align: center;
+}
+
+.gallerySection {
+    margin-bottom: 50px;
+    background-color: lightgray;
+}
+
+.highlistSectionPictureBox {
+    padding: 0 150px;
+    display: flex;
+}
+
+.highlistSectionPictureP {
+    align-self: center;
+    padding: 80px;
+    text-align: justify;
+}
+
+.highlistSectionPicture {
+    padding: 20px;
+    width:100%;
+}
+
+.shortSection {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.shortSection_btn {
+    width: 20%;
+}
+
+.googleMapSection {
+    padding: 50px 50px;
+    display: flex;
+}
+
+.googleMapSection_box {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.googleMapSection_input {
+    margin: 30px 0px;
+    width: 80%;
+}
+
+.googleMapSection_label + .googleMapSection_label {
+    margin-bottom: 20px;
+}
+
+.googleMapSection_button {
+    align-self: center;
+    width: 30%;
+}
+
+.googleMapImage{
+    display: flex;
+    margin: 50px 0;
+}
 
 
+.aboveFooterSection {
+    background-color: rgb(160, 159, 159);
+    display: flex;
+    justify-content: space-evenly;
+}
+.aboveFooterText{
+    margin: 20px 0;
+}
+
+.footer {
+    display: flex;
+    background-color: grey;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+}
+
+.footer_h1{
+    margin-bottom:0;
+}
+  
+.footerTextLists {
+    display: flex;
+    padding: 20px;
+}
+
+.footerTextListLinks {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footerTextListLinks + .footerTextListLinks {
+    margin-left: 20px;
+}
+
+.footer_link + .footer_link {
+    padding-top: 20px;
+}
+
+.footer_link:visited {
+    color: black;
+}
+  .footer_link:focus,
+  .footer_link:hover {
+    color: red;
+}
+
+.footerCopyrights {
+    flex: 2 1 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+
+.socialIcon{
+    margin-top:30px;
+    width: 20%;
+}
+.social_links + .social_links{
+    margin-left:50px;
+}
+
+/* Za širinu manju od 1200px pixela */
+@media screen and(max-width: 1200px) {
+    .googleMapSection {
+      flex-direction: column;
+    }
+}
+
+
+/* Za širinu manju od 1100px pixela */
+
+@media screen and (max-width: 1100px) {
+    .highlistSectionPictureBox {
+      flex-direction: column;
+    }
+    .highlistSectionPictureP {
+      padding: 10px 50px;
+      order: 1;
+    }
+    .highlistSectionPicture {
+      order: 0;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        flex-direction: column;
+    }
+    .footerCopyrights{
+        order:1;
+    }
+    .footerSocialPages{
+        text-align:center;
+    }
+    .socialIcon{
+        width: 8%;
+    }
+    .footerTextLists {
+        padding-bottom: 0px;
+    }
+    .footerTextListLinks {
+        padding-bottom: 0px;
+    }
+  }
 
 
 
 /* Za širinu manju od 700 pixela */
-@media(max-width: 700px){
-    .mainSectionPictures{
+@media screen and(max-width: 700px){
+    .galleryPictures{
         flex-direction: column;
     }
     .mainSectionPicture1,
@@ -114,10 +294,9 @@ html{
 
 
 
-/* Za širinu manju od 500 pixela */
-@media(max-width: 500px){
+/* Za širinu manju od 600 pixela */
+@media screen and (max-width: 600px){
 
-    /* Navigacijska lista se spusti ispod ikone myLogo */
     .navigationContainer{
         flex-direction: column;
         align-items: center;
