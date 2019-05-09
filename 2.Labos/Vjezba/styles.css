@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin : 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+/*
+ * NAVIGATION START
+*/
+
+.navigationContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.navigationPicture{
+    width: 100px;
+    height: 30px;
+}
+
+.navigationLinks{
+    display: flex;
+    list-style-type: none;
+}
+
+.navigationLink{
+    color: black;
+    margin-left: 20px;
+}
+
+.navigationLink:visited{
+    color: #88F;
+}
+
+.navigationLink:hover{
+    color: blue;
+}
+
+.navigationImage{
+    width: 100%;
+}
+
+/*
+ * NAVIGATION END
+*/
+
+
+
+.mainSection,
+.gallerySection,
+.highlistGalleryItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_h3 {
+    margin-top: 0px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
+
+.mainSectionPictures{
+    display: flex;
+}
+
+.mainSectionPicture1,
+.mainSectionPicture2,
+.mainSectionPicture3{
+    width: 33.33%;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.galleryPicturePContainer{
+    width: 33.33%;
+    padding: 10px;
+}
+
+.galleryPicture1,
+.galleryPicture2,
+.galleryPicture3{
+    width: 100%;
+    height: 250px;
+} 
+
+
+
+
+
+
+/* Za širinu manju od 700 pixela */
+@media(max-width: 700px){
+    .mainSectionPictures{
+        flex-direction: column;
+    }
+    .mainSectionPicture1,
+    .mainSectionPicture2,
+    .mainSectionPicture3{
+        width: 100%;
+    }
+    .galleryPicturePContainer{
+        width: 100%;
+    }
+}
+
+
+
+/* Za širinu manju od 500 pixela */
+@media(max-width: 500px){
+
+    /* Navigacijska lista se spusti ispod ikone myLogo */
+    .navigationContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
